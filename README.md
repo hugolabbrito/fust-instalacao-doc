@@ -6,10 +6,22 @@
 
 ## 📁 Conteúdo Disponível
 
-- [📄 Apresentação do Projeto](docs/apresentacao.pdf)
-- [📝 Termo de Aceite do Serviço](docs/termo_aceite.pdf)
+- [📄 Apresentação do Projeto](docs/oficio-apresentacao.pdf)
+- [📝 Termo de Recebimento do Serviço](docs/termo-recebimento-servico.pdf)
 - [🔧 Passo a Passo da Instalação](docs/passo_a_passo.md)
 - [🖼️ Imagens de Referência](imagens/)
+
+---
+
+## Documentos Importantes
+
+Na pasta `docs/` você encontrará os documentos essenciais para a instalação:
+
+- **Ofício de Apresentação** (`oficio-apresentacao.pdf`)  
+  Documento padrão que deve ser impresso e apresentado pelo técnico na escola antes do início da instalação. É obrigatório que o técnico leve esse documento para apresentar às equipes locais.
+
+- **Termo de Recebimento do Serviço** (`termo-recebimento-servico.pdf`)  
+  Documento que deve ser impresso e preenchido no local da instalação. Após o término, o técnico deve escanear ou fotografar o documento preenchido e enviar via grupo de comunicação responsável pela instalação daquela escola.
 
 ---
 
@@ -26,18 +38,16 @@ Esta documentação foi criada com o intuito de:
 
 ## 📦 Estrutura do Repositório
 
-```
-fust-instalacao-doc/
-├── README.md
-├── docs/
-│   ├── apresentacao.pdf
-│   ├── termo_aceite.pdf
-│   └── passo_a_passo.md
-├── imagens/
-│   └── exemplo_instalacao.jpg
-├── .gitignore
-└── LICENSE
-```
+#fust-instalacao-doc/
+#├── README.md
+#├── docs/
+#│ ├── oficio-apresentacao.pdf
+#│ ├── termo-recebimento-servico.pdf
+#│ └── passo_a_passo.md
+#├── imagens/
+#│ └── exemplo_instalacao.jpg
+#├── .gitignore
+#└── LICENSE
 
 ---
 
