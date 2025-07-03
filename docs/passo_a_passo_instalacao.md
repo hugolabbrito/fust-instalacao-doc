@@ -102,10 +102,6 @@ Após identificar os equipamentos conforme o checklist, siga os passos abaixo:
 - digite admin + ENTER (usuário)
 - digite admin + ENTER (senha)
 
-- Acesse via **cabo console**.
-- Configure VLANs, endereços IP e portas conforme orientação técnica.
-- Salve as configurações ao finalizar.
-
 ### 3.3 Atualização do Firmware do Firewall (se necessário)
 
 - Acesse via navegador: `System Tools → Firmware Upgrade`.
