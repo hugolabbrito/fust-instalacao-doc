@@ -1,0 +1,37 @@
+config
+delete interfaces ethernet eth1 address '192.168.0.25/24'
+set interfaces bridge br1 address 172.16.0.5/16
+set interfaces ethernet eth1 bridge-group bridge br1
+set interfaces ethernet eth2 bridge-group bridge br1
+set interfaces ethernet eth3 bridge-group bridge br1
+set interfaces ethernet eth4 bridge-group bridge br1
+set protocols memory-limit '100'
+set protocols static route 0.0.0.0/0 next-hop 172.16.0.1
+set service simet-ma description 'DM2500-SIMET'
+set service simet-ma 'enable'
+set service simet-ma test-period '240'
+set service ssh port '22'
+set system clear-arp-cache 'enable'
+set system config-management commit-revisions '20'
+set system console device ttyS0 speed '9600'
+set system host-name 'DM2500_FUST'
+set system login lock-timeout '180'
+set system login session-timeout '600'
+set system login user admin authentication encrypted-password '$6$WW7NNAv8PXYY$3yej8wPeE4npIwW.AwpEN3S2cnynAtAujptbDj4WS0qSXKbKjlSb9qg3omfQZojKIaDVjEMvrULEvkiWWV/e4.'
+set system login user admin authentication plaintext-password ''
+set system login user admin level 'admin'
+set system login user operador authentication encrypted-password '$6$PrTOYgU2j9ZG5T8$0d0wEgJ/UNhW0UT5DRep/zEAOzCiHgJqC6Vb/TsVfQ8TF43MrXDigjNr52g/jgEvO8dOYREu5Cee.c9eMnTZy.'
+set system login user operador authentication plaintext-password ''
+set system login user operador level 'admin'
+set system name-server '1.1.1.1'
+set system ntp server 'a.ntp.br'
+set system 'syslog'
+set system time-zone 'Brazil/East'
+set service snmp community GESTION authorization ro
+set service snmp community SMART_MONITORA authorization ro
+set service snmp community ESCRITO authorization rw
+set service snmp trap-target 187.8.169.42
+commit
+save
+run restart simet
+exit

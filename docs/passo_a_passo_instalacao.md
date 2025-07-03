@@ -101,6 +101,8 @@ Após identificar os equipamentos conforme o checklist, siga os passos abaixo:
 - Geralmente a tela fica preta piscando, só aperta a tecla ENTER 1x e vai aparece o login
 - digite admin + ENTER (usuário)
 - digite admin + ENTER (senha)
+- copie o conteudo que está no arquivo doc/datacom-config.txt
+- cole os comandos copiados no Putty e aguarde a conclusão da configuração
 
 ### 3.3 Atualização do Firmware do Firewall (se necessário)
 
@@ -111,12 +113,52 @@ Após identificar os equipamentos conforme o checklist, siga os passos abaixo:
 
 ### 3.4 Configuração de Rede
 
-- Configure IP fixo (ex: `192.168.1.1/24`) no ER7206.
-- Ative o servidor DHCP no firewall.
-- Verifique se os APs recebem IP e têm acesso à internet.
-- Acesse cada EAP225 e configure o nome da rede (SSID), segurança e canais.
-
----
+### Antes de iniciar as configurações do Firewall solicite no Grupo o Endereço IP, MASK e GW
+Solicito os endereço para configuração da WAN
+IP:
+MASCARA DE SUBREDE:
+GATEWAY:
+(se tiver) OBS: algumas redes da VIVO estão com a VLAN
+VLAN ID: 
+### 3.4.1 Configuração da WAN
+- Abra o navegador e coloque na barra de endereço https://192.168.0.1
+- No primeiro acesso, ele irá pedir para definir Usuário e senha e Preencha da Seguinte forma:
+  Username: admin 
+  Password: admin@admin 
+  Confirm the Password: admin@admin
+- Faça o Acesso ao Firewall
+- Entre em Network - WAN
+- Na Aba WAN MODE - Desative a Opção SFP/WAN1 - SAVE (o firewall vai pedir confirmação e ele vai reiniciar, demora 2 minutos o processo)
+- Faça o Login novamente
+- Entre em Network - WAN
+- Acesse a Aba WAN2
+- Em Connection Configuration
+  no campo Connection Type: selecione Static IP
+  no campo IP Address: (coloque o endereço fornecido no grupo)
+  no campo Subnet Mask: (coloque o endereço fornecido no grupo) Geralmente 255.255.255.252
+  no campo Default Gateway: (coloque o endereço fornecido no grupo)
+  no campo Primary DNS: coloque 8.8.8.8
+  no campo Secondary DNS: coloque 1.1.1.1
+  (caso tenha VLAN)
+  no campo VLAN habilite a caixa ENABLE
+  no campo VLAN ID: (coloque a VLAN fornecido no grupo)
+- Clique em Save e aguarde
+- Observe o Connection Status se está Connected
+- Teste a conexão com a internet
+### 3.4.2 Configuração da LAN
+- acesse https://192.168.0.1
+- Faça o Login
+- Entre em Network - LAN
+- Na Aba LAN - Network List
+- em Operation clique no simbolo edit
+  no campo IP Address: coloque 172.16.0.1
+  no campo Subnet Mask: coloque 255.255.0.0
+- Em DHCP
+  no campo Starting IP Address: coloque 172.16.0.50
+  no campo Ending IP Address: coloque 172.16.0.240
+- Clique em Ok para confirmar
+- Retire o cabo de rede do notebook e coloque novamente para pegar a nova faixa de endereço IP
+- Acesse https://172.16.0.1 para verificar o acesso ao firewall
 
 ## 🔍 4. Testes Finais
 

@@ -1,0 +1,27 @@
+Evidencias 01 - Print SSID (WiFi)
+
+Evidenciaas 02 - Informações da Rede WiFi
+
+- netsh wlan sh int
+
+Evidencias 03 - Print IP Config /ALL (Máquina do Técnico)
+
+- ipconfig /all
+
+Evidencias 04 - Print do Teste de Ping (google.com)
+
+- ping 8.8.8.8
+
+Evidencias 5 - Print do Acesso ao Instagram
+
+Evidencias 6 - Print do Acesso ao Facebook
+
+Evidencias 7 - Print do Acesso ao Site do Ministério da Educação - MEC
+
+Evidencias 8 - Print de Acesso ao Site da UOL (uol.com.br)
+
+Evidencias 9 - Site Proibido (xvideos.com)
+
+IMPORTANTE!! Nome completo, e telefone do responsável da escola
+
+SUPORTE = 11 3043-1700 Opção 2 e 4
