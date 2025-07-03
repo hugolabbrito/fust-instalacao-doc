@@ -1,0 +1,12 @@
+
+# Ignorar arquivos temporários do sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos de backup de editores
+*.bak
+*.tmp
+*.swp
+
+# Ignorar arquivos gerados automaticamente
+*.log
