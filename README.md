@@ -39,15 +39,15 @@ Esta documentação foi criada com o intuito de:
 ## 📦 Estrutura do Repositório
 
 #fust-instalacao-doc/
-#├── README.md
-#├── docs/
-#│ ├── oficio-apresentacao.pdf
-#│ ├── termo-recebimento-servico.pdf
-#│ └── passo_a_passo.md
-#├── imagens/
-#│ └── exemplo_instalacao.jpg
-#├── .gitignore
-#└── LICENSE
+  #├── README.md
+  #├── docs/
+  #│ ├── oficio-apresentacao.pdf
+  #│ ├── termo-recebimento-servico.pdf
+  #│ └── passo_a_passo.md
+  #├── imagens/
+  #│ └── exemplo_instalacao.jpg
+  #├── .gitignore
+  #└── LICENSE
 
 ---
 
