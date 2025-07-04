@@ -37,7 +37,6 @@ Esta documentação foi criada com o intuito de:
 ---
 
 ## 📦 Estrutura do Repositório
-## 📦 Estrutura do Repositório
 
 ```
 fust-instalacao-doc/
