@@ -38,7 +38,7 @@ Esta documentação foi criada com o intuito de:
 
 ## 📦 Estrutura do Repositório
 
-#fust-instalacao-doc/
+fust-instalacao-doc/
   ├── README.md
   ├── docs/
   │ ├── oficio-apresentacao.pdf
