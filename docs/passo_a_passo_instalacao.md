@@ -76,7 +76,7 @@ Após identificar os equipamentos conforme o checklist, siga os passos abaixo:
 
 - Instale o gabinete metálico (se aplicável).
 - Monte o rack e organize os equipamentos.
-- Ligue o ER7206 (Firewall) na Porta 2 - WAN2 o cabo da operadora. (se for ONU direto) (se for DATACOM via sair da porta 5)
+- Ligue o ER7206 (Firewall) na Porta 2 - WAN2 o cabo da operadora. (se for ONU direto) (se for DATACOM VIVO vai sair da porta 5)
 - Interligue o cabo do DATACOM porta 1 ao ER7206 (Firewall) na porta 3.
 - Interligue o cabo do Switch porta 1 ao ER7206 (Firewall) na porta 4.(caso a instalação tenha)
 - Interligue o cabo dos Access Points ao ER7206 (Firewall) a partir da porta 4 (caso não tenha switch)
